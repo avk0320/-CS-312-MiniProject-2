@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: rgb(4, 13, 80);
+    text-align: center;
+}
+
+div{
+    background-color: rgb(111, 170, 222);
+    align-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:larger;
+}
+
+.result{
+    margin: auto;
+    width: 50%;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.2);
+    }
+
+input[type="text"] {
+    border-radius: 8px;
+    padding: 10 px;
+    border: 1px solid;
+    transition: background-color 0.3s;
+    margin-top: 80px;
+    box-sizing: border-box;
+}
+
+button{
+    background-color: #f2e098;
+    border-radius: 8px;
+    color: rgb(68, 42, 11);
+    cursor: pointer;
+    box-shadow: #7d6e30;
+    margin-top: 80px;
+    box-sizing: border-box;
+}
+
+button:hover{
+    background-color: #7d6e30;
+}

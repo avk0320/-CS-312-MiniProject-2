@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <form action="/" method="POST">
+        <input type="text" name="city" class="ghost-input" placeholder="Enter a city" required />
+        <button type="submit">Check Weather</button>
+    </form>
+
+    <div class="result">
+        <% if (error) { %>
+            <h1>Error: <%= error %></h1>
+        <% } else if (temp !== null && temp !== undefined) { %>
+            <h1 class="temp">Temperature: <%= temp %> °C</h1>
+            <h2>Weather for <%= city %></h2>
+            <p>Forecast: <%= des %></p>
+            <% if (icon) { %>
+                <img src="http://openweathermap.org/img/wn/<%= icon %>@2x.png" alt="Weather icon">
+            <% } %>
+        <% } else { %>
+            <h1>No weather data available.</h1>
+        <% } %>
+    </div>
+</body>
+</html>
